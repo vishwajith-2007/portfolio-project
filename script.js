@@ -6,22 +6,23 @@ const name = document.getElementById("name").value
 const email = document.getElementById("email").value
 const message = document.getElementById("message").value
 
-fetch("https://portfolio-project-iubg.onrender.com/contacts", {
+fetch("https://portfolio-project-iubg.onrender.com/contact", {
 
-method: "POST",
+method:"POST",
 
-headers: {
-"Content-Type": "application/json"
+headers:{
+"Content-Type":"application/json"
 },
 
-body: JSON.stringify({
+body:JSON.stringify({
 name,
 email,
 message
 })
 
 })
-.then(res => res.text())
-.then(data => alert(data))
+.then(res=>res.text())
+.then(data=>alert(data))
+.catch(err=>alert("Error: "+err))
 
 }
