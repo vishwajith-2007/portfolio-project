@@ -61,6 +61,9 @@ const result = await pool.query("SELECT * FROM contacts")
 res.json(result.rows)
 
 })
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
+});
 app.listen(process.env.PORT || 3000, () => {
 console.log("Server running")
 })
