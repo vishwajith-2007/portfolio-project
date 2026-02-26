@@ -6,7 +6,7 @@ const name = document.getElementById("name").value
 const email = document.getElementById("email").value
 const message = document.getElementById("message").value
 
-fetch("https://portfolio-project-iubg.onrender.com/contacts", {
+fetch("/contact", {
 
 method:"POST",
 
