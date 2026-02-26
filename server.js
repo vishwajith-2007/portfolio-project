@@ -6,6 +6,7 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
+app.use(express.static(__dirname));
 
 const pool = new Pool({
 
@@ -60,8 +61,6 @@ const result = await pool.query("SELECT * FROM contacts")
 res.json(result.rows)
 
 })
-app.listen(3000, ()=>{
-
-console.log("Server running on port 3000")
-
+app.listen(process.env.PORT || 3000, () => {
+console.log("Server running")
 })
