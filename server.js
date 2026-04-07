@@ -10,7 +10,7 @@ app.use(express.static(__dirname));
 
 const pool = new Pool({
 
-connectionString:"postgresql://portfolio_user:S4CXsexGZsQPiOzCG6wMXZfe0KqWoNMe@dpg-d6fd0fggjchc73flsuu0-a.singapore-postgres.render.com/portfolio_tqk2",
+connectionString:"postgresql://portfolio_db_new_fzvn_user:bj4wAEHG4RhfGPyw4bIH7gFKyYOrPSFM@dpg-d739uqs2kvos738b1keg-a.singapore-postgres.render.com/portfolio_db_new_fzvn",
 
 ssl:{
 rejectUnauthorized:false
